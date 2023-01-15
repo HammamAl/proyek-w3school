@@ -1,0 +1,17 @@
+{% extends "todo/base.html" %}
+
+{% block title %}
+    Details about {{ posts.firstname }} {{ posts.lastname }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ posts.firstname }} {{ posts.lastname }}</h1>
+    
+    <p>Phone: {{ posts.phone }}</p>
+    <p>Member since: {{ posts.joined_date }}</p>
+
+    <p>Back to <a href="/anggota">Anggota</a></p>
+
+
+
+{% endblock content %}

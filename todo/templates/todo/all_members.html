@@ -1,0 +1,18 @@
+{% extends "todo/base.html" %}
+
+{% block title %}
+    Ini adalah keluarga saya
+{% endblock title %}
+
+{% block content %}
+
+    <p><a href="/"> HOME </a></p>
+
+    <h1> Anggota </h1>
+    <ul>
+        {% for x in posts %}
+            <li> <a href="/details/{{x.id}}">{{ x.firstname }} {{ x.lastname }} </a></li>
+        {% endfor %}
+
+    </ul>
+{% endblock content %}
